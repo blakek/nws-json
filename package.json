@@ -1,0 +1,48 @@
+{
+  "name": "nws-json",
+  "version": "0.0.1",
+  "description": "National Weather Service (weather.com) forecasts and alerts in JSON",
+  "main": "dist/nws-json.js",
+  "homepage": "https://github.com/blakek/nws-json#readme",
+  "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
+  "license": "MPL-2.0",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "coverage": "nyc ava",
+    "lint": "standard --fix | snazzy",
+    "report": "nyc report --reporter=html",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakek/nws-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blakek/nws-json/issues"
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-latest": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "nyc": "^8.3.0",
+    "snazzy": "^5.0.0",
+    "standard": "^8.1.0"
+  }
+}

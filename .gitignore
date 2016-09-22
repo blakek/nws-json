@@ -1,0 +1,14 @@
+# Compiled/built project
+dist
+
+# Dependency directories
+node_modules
+
+# Testing output
+.nyc_output
+coverage
+
+# Logs
+logs
+*.log
+npm-debug.log*
